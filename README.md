@@ -23,7 +23,7 @@ A URL shortening service built with Node.js, Nest.js, Prisma, Supabase, and Redi
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/url-shortener-assignment.git
+git clone https://github.com/iamalfi/assignment-url-shortener.git
 cd url-shortener-assignment
 ```
 
