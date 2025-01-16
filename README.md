@@ -133,7 +133,7 @@ yarn test
 Once the application is running, you can access the Swagger documentation at:
 
 ```
-http://localhost:3000/api/docs
+http://localhost:4242/doc
 ```
 
 The Swagger UI provides a comprehensive interface to:
