@@ -8,12 +8,13 @@ import { JwtService } from '@nestjs/jwt';
 import { MailerModule } from './mailer/mailer.module';
 
 import { MailerService } from './mailer/mailer.service';
-import { MediaModule } from './media/media.module';
 import { FastifyMulterModule } from '@nest-lab/fastify-multer';
 import { APP_FILTER } from '@nestjs/core';
 import { UnknownExceptionFilter } from './error/unknown-exception.filter';
 import { OtpModule } from './otp/otp.module';
 import { OtpService } from './otp/otp.service';
+import { UrlModule } from './url/url.module';
+import { RedisModule } from './redis/redis.module';
 
 @Module({
   imports: [
@@ -21,10 +22,11 @@ import { OtpService } from './otp/otp.service';
       isGlobal: true,
     }),
     UserModule,
-    MailerModule,
-    OtpModule,
-    MediaModule,
+    // MailerModule,
+    // OtpModule,
     FastifyMulterModule,
+    UrlModule,
+    RedisModule,
   ],
   controllers: [AppController],
   providers: [
